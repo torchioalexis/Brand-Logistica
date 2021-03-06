@@ -1,0 +1,20 @@
+[class*="col-"] { /* selecciona los atributos class cuyos valores tenga una subcadena col-*/
+    align-items: center;
+}
+
+@media (max-width: 950px) {
+    h1 {
+        margin-bottom: 10%;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .col-4 {
+        order: 1;
+    }
+
+    .col-8 {
+        order: 2;
+    }
+}

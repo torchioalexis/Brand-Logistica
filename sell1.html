@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Styles-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/mobile.css">    
+    <link rel="stylesheet" href="css/grid.css">
+    <!--Title-->
+    <title>Brand - Tu delivery</title>
+</head>
+<body>
+    <!--Navbar starts-->
+    <nav class="fadeInDown">
+        <div class="brand_image">
+            <a href="index.html"><img src="images/logo.png" alt="Logo Brand"></a>
+        </div>
+        <div class="nav_options">
+            <ul>
+                <li><a href="faqs.html">Faqs</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--Navbar ends-->
+
+    <!--Sell starts-->
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="modulo_pago">
+                    <div class="modulo_pago-images">
+                        <img src="images/box1.png" alt="">
+                    </div>
+                    <h1 tabindex="0">Grandes volúmenes</h1>
+                    <p tabindex="1">Ideal para el traslado de muebles, artículos pesados o mudanzas</p>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="modulo_pago">
+                    <form action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=P65LVBKAEPWRU" method="POST">
+                        <label for="name" tabindex="2">Nombre</label>
+                        <input type="text" name="first_name" class="data" aria-label="Completar">
+                        <label for="email" tabindex="3">Mail</label>
+                        <input type="text" name="email" class="data" aria-label="Completar">
+                        <label for="phone" tabindex="4">Teléfono</label>
+                        <input type="text" name="night_phone_a" class="data" aria-label="Completar">
+                        <input type="submit" name="submit" class="main_button" value="Confirmar pago">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Sell ends-->
+
+    <!--Footer starts-->
+    <footer class="footer">
+        <a href="terms.html">Términos y condiciones</a>
+        <a href="mailto:contacto@contactame.com">contacto@contactame.com</a>
+    </footer>
+    <!--Footer ends-->
+</body>
+</html>

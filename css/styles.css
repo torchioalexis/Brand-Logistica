@@ -1,0 +1,229 @@
+/* ----------------- Variables */
+:root {
+    --green-color: #7ACC2D;
+    --white-color: white;
+    --black-color: #313337;
+
+    /* Font */
+    --normal: 12px;
+    /* Space */
+    --space: 10px;
+    /* Box Shadow */
+    --box: 2px 2px 2px 2px #C1BCBC;
+}
+
+/* ----------------- Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* ----------------- General */
+html,body {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--normal);
+    margin: 0px;
+    padding: 0px;
+}
+
+label {
+    display: block;
+    font-size: var(--normal);
+    margin: var(--space) 0;
+}
+
+/* ----------------- Nav */
+nav{
+    align-items: center;
+    background: var(--green-color);
+    color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space);
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    padding-left: 20px;
+}
+
+nav li a {
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: var(--white-color)
+}
+
+/* ----------------- Main section */
+.main_section {
+    padding: 15%;
+    text-align: center;
+}
+
+.products {
+    background-image: url("../images/curve.png") ;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    padding: 20%;
+}
+
+.product {
+    margin-top: -360px;
+    padding: var(--space);
+    width: 100%;
+}
+
+.product .content {
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    padding: 15%;
+}
+
+.img_content {
+    text-align: center;
+}
+
+.main_button {
+    background-color: var(--green-color);
+    border: 0;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    font-size: var(--normal);
+    padding: var(--space);
+    text-align: center;
+    width: 100%;
+}
+
+.main_button:hover {
+    background-color: #5E9E22;
+}
+
+.more_info {
+    align-items: baseline;
+    border-bottom: 1px solid #EEEEEE;
+    display: flex;
+    padding: 10%;
+}
+
+.more_info img {
+    max-height: 150px;
+}
+
+.extra {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.extra p {
+    padding: 0 20%;
+}
+
+.mentions {
+    padding: 5%;
+    text-align: center;
+}
+.mentions__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5% 10%;
+}
+.mentions__box--item {
+    box-shadow: var(--box);
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    margin-right: 1%;
+    width: 100%;
+}
+
+.mentions__box--item img {
+    align-self: center;
+    display: flex;
+    height: 100px;
+    width: 200px;
+}
+
+.mentions__box--item p {
+    margin-top: 0px;
+}
+
+/* ----------------- Sell */
+
+.container {
+    padding: 5% 10%;
+}
+
+.modulo_pago {
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--space);
+}
+
+.modulo_pago-images {
+    margin: auto;
+    max-width: 150px;
+}
+
+.modulo_pago .main_button {
+    margin-top: 10px;
+}
+
+.data {
+    border: 1px solid var(--black-color);
+    border-radius: 2px;
+    box-sizing: border-box;
+    height: 35px;
+    width: 100%;
+}
+
+/* ----------------- Faqs */
+.faq--description {
+    padding: 5%;
+}
+.faq--description ol {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq--description li {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* ----------------- Terms */
+.clause {
+    padding: 5%;
+}
+.clause--details {
+    padding: 1% 10%;
+    text-align: justify;
+}
+
+/* ----------------- Footer */
+.footer {
+    align-items: center;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space);
+}
+
+.footer a {
+    color: var(--white-color);
+    text-decoration: none;
+}
